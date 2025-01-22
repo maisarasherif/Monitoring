@@ -14,7 +14,7 @@ services:
       - "9090:9090"
     command: "--config.file=/etc/prometheus/prometheus.yml"
     volumes:
-      - /home/maisara/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      -/path/to/prometheus.yml:/etc/prometheus/prometheus.yml:ro
       - prometheus-data:/prometheus
     restart: unless-stopped
 
